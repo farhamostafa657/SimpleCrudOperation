@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+#add_note {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c09e94;
+}
+
+#add_note_button {
+  border-radius: 20px;
+  width: 20%;
+  padding: 8px;
+  margin: 5px;
+  background-color: #1d2d25;
+  color: white;
+}
+#title_invalide,
+#desc_invalid {
+  color: #ccd2d2;
+  font-size: 20px;
+}
+
+#title,
+#desc {
+  border-radius: 20px;
+  padding: 10px 60px;
+  font-size: larger;
+  text-align: center;
+}
+.display {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #91524b;
+  border: 2px solid #1d2d25;
+  border-radius: 6px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #1d2d25;
+}
+tr:nth-child(even) {
+  background-color: #c09e94;
+}
+
+.delUp {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delUp button {
+  border-radius: 20px;
+  padding: 8px;
+  background-color: #1d2d25;
+  color: white;
+}
+
+/* style pop up window */
+
+.popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  background: #ccd2d2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.popup .close-btn {
+  background: #1d2d25;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}

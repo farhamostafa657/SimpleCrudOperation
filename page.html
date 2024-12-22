@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="add_note">
+        <label for="title">Note Title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="enter note title"
+        />
+        <span id="title_invalide"></span>
+        <br />
+        <label for="desc">Description</label>
+        <input
+          type="text"
+          name="desc"
+          id="desc"
+          placeholder="enter your description"
+        />
+        <span id="desc_invalid"></span>
+        <br />
+        <button id="add_note_button">Add</button>
+      </div>
+      <div class="display">
+        <i class="fa-regular fa-heart"></i> Display All Notes
+      </div>
+      <div class="table_data">
+        <table id="theTable"></table>
+        <div id="popup" class="popup">
+          <h2>Update Note</h2>
+          <label for="uptitle">Title</label>
+          <input type="text" id="uptitle" />
+          <span></span>
+          <br />
+          <br />
+          <label for="upDescription">Description</label>
+          <input type="text" id="upDesc" />
+          <span></span>
+          <br />
+          <br />
+          <button class="close-btn" id="closePopupBtn" onclick="upData()">
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/3597cc1bad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
